@@ -1,9 +1,11 @@
+import { cn } from "../../utils/cn";
+
 export default function Badge({
   children,
   variant = "primary",
   size = "md",
   rounded = "full",
-  className = "",
+  className,
 }) {
   const variants = {
     primary:
@@ -36,15 +38,13 @@ export default function Badge({
 
   return (
     <span
-      className={`
-        inline-flex items-center justify-center
-        font-medium
-        transition-colors duration-300
-        ${variants[variant]}
-        ${sizes[size]}
-        ${roundedStyles[rounded]}
-        ${className}
-      `}
+      className={cn(
+        "inline-flex items-center justify-center font-medium transition-colors duration-300",
+        variants[variant],
+        sizes[size],
+        roundedStyles[rounded],
+        className
+      )}
     >
       {children}
     </span>

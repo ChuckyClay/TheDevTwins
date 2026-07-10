@@ -1,3 +1,5 @@
+import { cn } from "../../utils/cn";
+
 export default function Button({
   children,
   variant = "primary",
@@ -8,7 +10,7 @@ export default function Button({
   fullWidth = false,
   leftIcon,
   rightIcon,
-  className = "",
+  className,
   onClick,
 }) {
   const variants = {
@@ -36,15 +38,13 @@ export default function Button({
       type={type}
       disabled={disabled || loading}
       onClick={onClick}
-      className={`
-        inline-flex items-center justify-center gap-2
-        rounded-xl font-semibold transition-all duration-300
-        disabled:cursor-not-allowed disabled:opacity-60
-        ${variants[variant]}
-        ${sizes[size]}
-        ${fullWidth ? "w-full" : ""}
-        ${className}
-      `}
+      className={cn(
+        "inline-flex items-center justify-center gap-2 rounded-xl font-semibold transition-all duration-300 disabled:cursor-not-allowed disabled:opacity-60",
+        variants[variant],
+        sizes[size],
+        fullWidth && "w-full",
+        className
+      )}
     >
       {loading ? (
         <>

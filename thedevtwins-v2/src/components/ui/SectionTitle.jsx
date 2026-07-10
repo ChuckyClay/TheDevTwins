@@ -1,11 +1,12 @@
 import Badge from "./Badge";
+import { cn } from "../../utils/cn";
 
 export default function SectionTitle({
   badge,
   title,
   subtitle,
   align = "center",
-  className = "",
+  className,
 }) {
   const alignment = {
     left: "text-left",
@@ -13,13 +14,19 @@ export default function SectionTitle({
     right: "text-right",
   };
 
+  const subtitleAlignment = {
+    left: "",
+    center: "mx-auto",
+    right: "ml-auto",
+  };
+
   return (
     <div
-      className={`
-        mb-16
-        ${alignment[align]}
-        ${className}
-      `}
+      className={cn(
+        "mb-16",
+        alignment[align],
+        className
+      )}
     >
       {badge && (
         <Badge className="mb-5">
@@ -32,7 +39,12 @@ export default function SectionTitle({
       </h2>
 
       {subtitle && (
-        <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-slate-400 sm:text-lg">
+        <p
+          className={cn(
+            "mt-5 max-w-3xl text-base leading-7 text-slate-400 sm:text-lg",
+            subtitleAlignment[align]
+          )}
+        >
           {subtitle}
         </p>
       )}
