@@ -1,5 +1,5 @@
-import { socials } from "../../constants/socials";
-import { cn } from "../../utils/cn";
+import { socials } from "@/constants/socials";
+import { cn } from "@/utils/cn";
 
 export default function SocialLinks({
   size = "md",

@@ -1,5 +1,5 @@
-import Badge from "./Badge";
-import { cn } from "../../utils/cn";
+import Badge from "@/components/ui/Badge";
+import { cn } from "@/utils/cn";
 
 export default function SectionTitle({
   badge,

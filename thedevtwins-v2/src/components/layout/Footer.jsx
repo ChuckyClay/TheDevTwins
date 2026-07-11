@@ -1,10 +1,10 @@
-import Logo from "./Logo";
-import NavLinks from "./NavLinks";
-import SocialLinks from "./SocialLinks";
+import Logo from "@/components/layout/Logo";
+import NavLinks from "@/components/layout/NavLinks";
+import SocialLinks from "@/components/layout/SocialLinks";
 
-import Container from "../ui/Container";
+import Container from "@/components/ui/Container";
 
-import { siteConfig } from "../../constants/site";
+import { siteConfig } from "@/constants/site";
 
 export default function Footer() {
   return (

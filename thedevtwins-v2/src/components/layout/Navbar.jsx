@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-import Container from "../ui/Container";
-import Logo from "./Logo";
-import NavLinks from "./NavLinks";
-import MobileMenu from "./MobileMenu";
+import Container from "@/components/ui/Container";
+import Logo from "@/components/layout/Logo";
+import NavLinks from "@/components/layout/NavLinks";
+import MobileMenu from "@/components/layout/MobileMenu";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

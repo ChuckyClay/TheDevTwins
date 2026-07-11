@@ -1,5 +1,23 @@
+import {
+  SkillsHero,
+  SkillsGrid,
+  Technologies,
+  Workflow,
+  SkillsCTA,
+} from "@/components/skills";
+
 export default function Skills() {
   return (
-    <h1 className="text-white text-4xl">Skills Page</h1>
+    <>
+      <SkillsHero />
+
+      <SkillsGrid />
+
+      <Technologies />
+
+      <Workflow />
+
+      <SkillsCTA />
+    </>
   );
 }

@@ -1,5 +1,5 @@
-import NavLinks from "./NavLinks";
-import { cn } from "../../utils/cn";
+import NavLinks from "@/components/layout/NavLinks";
+import { cn } from "@/utils/cn";
 
 export default function MobileMenu({
   isOpen,

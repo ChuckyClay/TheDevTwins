@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 
-import { navigation } from "../../constants/navigation";
-import { cn } from "../../utils/cn";
+import { navigation } from "@/constants/navigation";
+import { cn } from "@/utils/cn";
 
 export default function NavLinks({
   direction = "horizontal",
@@ -33,7 +33,7 @@ export default function NavLinks({
             )
           }
         >
-          {item.name}
+          {item.label}
         </NavLink>
       ))}
     </nav>

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-import { ROUTES } from "../../constants/routes";
-import { siteConfig } from "../../constants/site";
-import { cn } from "../../utils/cn";
+import { ROUTES } from "@/constants/routes";
+import { siteConfig } from "@/constants/site";
+import { cn } from "@/utils/cn";
 
 export default function Logo({
   className,

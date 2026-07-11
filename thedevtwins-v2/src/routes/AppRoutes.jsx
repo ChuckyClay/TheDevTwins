@@ -1,16 +1,16 @@
 import { Routes, Route } from "react-router-dom";
 
-import MainLayout from "../layouts/MainLayout";
+import MainLayout from "@/layouts/MainLayout";
 
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Services from "../pages/Services";
-import Projects from "../pages/Projects";
-import Skills from "../pages/Skills";
-import Contact from "../pages/Contact";
-import NotFound from "../pages/NotFound";
+import Home from "@/pages/Home";
+import About from "@/pages/About";
+import Services from "@/pages/Services";
+import Projects from "@/pages/Projects";
+import Skills from "@/pages/Skills";
+import Contact from "@/pages/Contact";
+import NotFound from "@/pages/NotFound";
 
-import { ROUTES } from "../constants/routes";
+import { ROUTES } from "@/constants/routes";
 
 export default function AppRoutes() {
   return (
