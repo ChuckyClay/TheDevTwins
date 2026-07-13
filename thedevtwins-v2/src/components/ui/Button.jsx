@@ -1,4 +1,5 @@
 import { memo } from "react";
+import { motion } from "framer-motion";
 
 import { cn } from "@/utils/cn";
 
@@ -36,10 +37,16 @@ function Button({
   };
 
   return (
-    <button
+    <motion.button
       type={type}
       disabled={disabled || loading}
       onClick={onClick}
+      whileHover={!disabled && !loading ? { scale: 1.03, y: -2 } : {}}
+      whileTap={!disabled && !loading ? { scale: 0.97 } : {}}
+      transition={{
+        duration: 0.2,
+        ease: "easeOut",
+      }}
       className={cn(
         "inline-flex items-center justify-center gap-2 rounded-xl font-semibold transition-all duration-300 disabled:cursor-not-allowed disabled:opacity-60",
         variants[variant],
@@ -60,7 +67,7 @@ function Button({
           {rightIcon}
         </>
       )}
-    </button>
+    </motion.button>
   );
 }
 

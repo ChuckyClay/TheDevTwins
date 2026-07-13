@@ -5,6 +5,9 @@ import { ServicesPreview } from "@/components/home/services-preview";
 import { ProjectsPreview } from "@/components/home/projects-preview";
 import { Testimonials } from "@/components/home/testimonials";
 import { CTA } from "@/components/home/cta";
+
+import AnimatedSection from "@/components/ui/AnimatedSection";
+
 import { SEO } from "@/components/seo";
 
 import { seo } from "@/data/seo";
@@ -15,12 +18,30 @@ export default function Home() {
       <SEO {...seo.home} />
 
       <Hero />
-      <Technologies />
-      <AboutPreview />
-      <ServicesPreview />
-      <ProjectsPreview />
-      <Testimonials />
-      <CTA />
+
+      <AnimatedSection>
+        <Technologies />
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <AboutPreview />
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <ServicesPreview />
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <ProjectsPreview />
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <Testimonials />
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <CTA />
+      </AnimatedSection>
     </>
   );
 }
