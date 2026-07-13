@@ -1,6 +1,8 @@
+import { memo } from "react";
+
 import Card from "@/components/ui/Card";
 
-export default function TechnologyCard({ technology }) {
+function TechnologyCard({ technology }) {
   return (
     <Card className="text-center">
       <h3 className="text-xl font-semibold text-white">
@@ -9,3 +11,5 @@ export default function TechnologyCard({ technology }) {
     </Card>
   );
 }
+
+export default memo(TechnologyCard);

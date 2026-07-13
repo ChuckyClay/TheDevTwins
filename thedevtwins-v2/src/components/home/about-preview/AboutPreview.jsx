@@ -19,9 +19,9 @@ export default function AboutPreview() {
               {about.title}
             </h2>
 
-            {about.description.map((paragraph, index) => (
+            {about.description.map((paragraph) => (
               <p
-                key={index}
+                key={paragraph}
                 className="mt-6 leading-8 text-slate-400"
               >
                 {paragraph}

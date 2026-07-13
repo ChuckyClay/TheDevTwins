@@ -1,7 +1,9 @@
+import { memo } from "react";
+
 import Badge from "@/components/ui/Badge";
 import { cn } from "@/utils/cn";
 
-export default function SectionTitle({
+function SectionTitle({
   badge,
   title,
   subtitle,
@@ -51,3 +53,5 @@ export default function SectionTitle({
     </div>
   );
 }
+
+export default memo(SectionTitle);

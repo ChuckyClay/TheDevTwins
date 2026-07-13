@@ -1,7 +1,9 @@
+import { memo } from "react";
+
 import { projectCategories } from "@/constants/projectCategories";
 
 
-export default function ProjectFilter({
+function ProjectFilter({
   activeCategory,
   setActiveCategory,
 }) {
@@ -25,3 +27,5 @@ export default function ProjectFilter({
     </div>
   );
 }
+
+export default memo(ProjectFilter);

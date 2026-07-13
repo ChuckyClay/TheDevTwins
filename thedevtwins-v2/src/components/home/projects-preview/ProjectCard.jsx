@@ -1,6 +1,8 @@
+import { memo } from "react";
+
 import Card from "@/components/ui/Card";
 
-export default function ProjectCard({ project }) {
+function ProjectCard({ project }) {
   return (
     <Card>
       <p className="text-sm font-medium text-cyan-400">
@@ -17,3 +19,5 @@ export default function ProjectCard({ project }) {
     </Card>
   );
 }
+
+export default memo(ProjectCard);

@@ -1,6 +1,8 @@
+import { memo } from "react";
+
 import Card from "@/components/ui/Card";
 
-export default function TeamCard({ member }) {
+function TeamCard({ member }) {
   return (
     <Card>
 
@@ -46,3 +48,5 @@ export default function TeamCard({ member }) {
     </Card>
   );
 }
+
+export default memo(TeamCard);

@@ -1,7 +1,8 @@
+import { memo } from "react";
+
 import Card from "@/components/ui/Card";
 
-
-export default function ProcessCard({ step }) {
+function ProcessCard({ step }) {
   return (
     <Card>
 
@@ -22,3 +23,5 @@ export default function ProcessCard({ step }) {
     </Card>
   );
 }
+
+export default memo(ProcessCard);

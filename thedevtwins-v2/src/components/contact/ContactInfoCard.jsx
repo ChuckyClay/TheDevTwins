@@ -1,4 +1,6 @@
-export default function ContactInfoCard({ contact }) {
+import { memo } from "react";
+
+function ContactInfoCard({ contact }) {
   const content = (
     <>
       <h3 className="text-xl font-semibold text-white">
@@ -27,3 +29,5 @@ export default function ContactInfoCard({ contact }) {
     </div>
   );
 }
+
+export default memo(ContactInfoCard);

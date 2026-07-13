@@ -1,4 +1,6 @@
-export default function Textarea({
+import { memo } from "react";
+
+function Textarea({
   label,
   error,
   className = "",
@@ -47,3 +49,5 @@ export default function Textarea({
     </div>
   );
 }
+
+export default memo(Textarea);

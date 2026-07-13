@@ -1,4 +1,6 @@
-export default function Input({
+import { memo } from "react";
+
+function Input({
   label,
   error,
   className = "",
@@ -43,3 +45,5 @@ export default function Input({
     </div>
   );
 }
+
+export default memo(Input);

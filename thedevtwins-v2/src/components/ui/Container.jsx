@@ -1,6 +1,8 @@
+import { memo } from "react";
+
 import { cn } from "@/utils/cn";
 
-export default function Container({
+function Container({
   children,
   className,
   as: Component = "div",
@@ -16,3 +18,5 @@ export default function Container({
     </Component>
   );
 }
+
+export default memo(Container);

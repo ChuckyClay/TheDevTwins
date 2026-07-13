@@ -1,6 +1,8 @@
+import { memo } from "react";
+
 import { cn } from "@/utils/cn";
 
-export default function Badge({
+function Badge({
   children,
   variant = "primary",
   size = "md",
@@ -50,3 +52,5 @@ export default function Badge({
     </span>
   );
 }
+
+export default memo(Badge);

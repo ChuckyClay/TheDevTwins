@@ -18,9 +18,9 @@ export default function Story() {
 
             <div className="mt-8 space-y-6">
               {aboutPage.story.paragraphs.map(
-                (paragraph, index) => (
+                (paragraph) => (
                   <p
-                    key={index}
+                    key={paragraph}
                     className="leading-8 text-slate-400"
                   >
                     {paragraph}

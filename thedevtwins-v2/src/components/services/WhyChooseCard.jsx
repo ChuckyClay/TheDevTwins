@@ -1,7 +1,8 @@
+import { memo } from "react";
+
 import Card from "@/components/ui/Card";
 
-
-export default function WhyChooseCard({ item }) {
+function WhyChooseCard({ item }) {
   return (
     <Card>
 
@@ -17,3 +18,5 @@ export default function WhyChooseCard({ item }) {
     </Card>
   );
 }
+
+export default memo(WhyChooseCard);

@@ -1,6 +1,8 @@
+import { memo } from "react";
+
 import Card from "@/components/ui/Card";
 
-export default function SkillCard({ skill }) {
+function SkillCard({ skill }) {
   return (
     <Card>
       <h3 className="text-2xl font-semibold text-white">
@@ -13,3 +15,5 @@ export default function SkillCard({ skill }) {
     </Card>
   );
 }
+
+export default memo(SkillCard);

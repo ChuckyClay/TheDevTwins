@@ -1,6 +1,8 @@
+import { memo } from "react";
+
 import Card from "@/components/ui/Card";
 
-export default function TestimonialCard({ testimonial }) {
+function TestimonialCard({ testimonial }) {
   return (
     <Card>
       <p className="leading-7 text-slate-400">
@@ -19,3 +21,5 @@ export default function TestimonialCard({ testimonial }) {
     </Card>
   );
 }
+
+export default memo(TestimonialCard);

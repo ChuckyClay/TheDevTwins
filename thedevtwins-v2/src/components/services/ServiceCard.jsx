@@ -1,7 +1,8 @@
+import { memo } from "react";
+
 import Card from "@/components/ui/Card";
 
-
-export default function ServiceCard({ service }) {
+function ServiceCard({ service }) {
   return (
     <Card>
 
@@ -18,3 +19,5 @@ export default function ServiceCard({ service }) {
     </Card>
   );
 }
+
+export default memo(ServiceCard);
