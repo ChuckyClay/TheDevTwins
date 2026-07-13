@@ -3,7 +3,7 @@ export const siteConfig = {
 
   shortName: "DevTwins",
 
-  tagline: "Building Secure & Modern Digital Solutions",
+  tagline: "Building Modern Websites, Web Applications & Digital Solutions",
 
   description:
     "The DevTwins is a software development team specializing in modern websites, web applications, backend systems, cybersecurity, and networking solutions.",

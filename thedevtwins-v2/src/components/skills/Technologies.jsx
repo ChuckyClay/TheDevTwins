@@ -3,7 +3,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 
 import { technologies } from "@/data/technologies";
 
-import TechnologyBadge from "./TechnologyBadge";
+import TechnologyBadge from "@/components/skills/TechnologyBadge";
 
 export default function Technologies() {
   return (

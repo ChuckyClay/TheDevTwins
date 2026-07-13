@@ -2,7 +2,7 @@ import Button from "@/components/ui/Button";
 import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
 
-import FormField from "./FormField";
+import FormField from "@/components/contact/FormField";
 
 export default function ContactForm() {
   const handleSubmit = (e) => {

@@ -3,7 +3,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 
 import { contactInfo } from "@/data/contactInfo";
 
-import ContactInfoCard from "./ContactInfoCard";
+import ContactInfoCard from "@/components/contact/ContactInfoCard";
 
 export default function ContactInfo() {
   return (

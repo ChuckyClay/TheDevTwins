@@ -3,7 +3,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 
 import { team } from "@/data/team";
 
-import TeamCard from "./TeamCard";
+import TeamCard from "@/components/about/team/TeamCard";
 
 
 export default function Team() {

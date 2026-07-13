@@ -36,8 +36,6 @@ export const projects = [
       "MySQL",
     ],
 
-    image: "/images/projects/tenant-management.png",
-
     status: "In Development",
 
     github: "#",
@@ -85,8 +83,6 @@ export const projects = [
       "SQLite",
     ],
 
-    image: "/images/projects/parish-website.png",
-
     status: "Completed",
 
     github: "#",
@@ -132,8 +128,6 @@ export const projects = [
       "Vite",
       "JavaScript",
     ],
-
-    image: "/images/projects/devtwins-portfolio.png",
 
     status: "In Development",
 

@@ -3,7 +3,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 
 import { whyChooseUs } from "@/data/whyChooseUs";
 
-import WhyChooseCard from "./WhyChooseCard";
+import WhyChooseCard from "@/components/services/WhyChooseCard";
 
 
 export default function WhyChooseUs() {

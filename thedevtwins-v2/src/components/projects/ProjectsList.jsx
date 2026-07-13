@@ -5,8 +5,8 @@ import SectionTitle from "@/components/ui/SectionTitle";
 
 import { projects } from "@/data/projects";
 
-import ProjectCard from "./ProjectCard";
-import ProjectFilter from "./ProjectFilter";
+import ProjectCard from "@/components/projects/ProjectCard";
+import ProjectFilter from "@/components/projects/ProjectFilter";
 
 
 export default function ProjectsList() {

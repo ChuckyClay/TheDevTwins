@@ -16,8 +16,6 @@ export const team = [
       "Cybersecurity",
     ],
 
-    image: "/images/team-member-1.jpg",
-
     social: {
       github: "#",
       linkedin: "#",
@@ -40,8 +38,6 @@ export const team = [
       "UI Design",
       "Tailwind CSS",
     ],
-
-    image: "/images/team-member-2.jpg",
 
     social: {
       github: "#",

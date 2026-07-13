@@ -3,7 +3,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 
 import { services } from "@/data/services";
 
-import ServiceCard from "./ServiceCard";
+import ServiceCard from "@/components/services/ServiceCard";
 
 
 export default function ServicesList() {

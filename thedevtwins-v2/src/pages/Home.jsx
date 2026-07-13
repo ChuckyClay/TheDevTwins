@@ -5,10 +5,15 @@ import { ServicesPreview } from "@/components/home/services-preview";
 import { ProjectsPreview } from "@/components/home/projects-preview";
 import { Testimonials } from "@/components/home/testimonials";
 import { CTA } from "@/components/home/cta";
+import { SEO } from "@/components/seo";
+
+import { seo } from "@/data/seo";
 
 export default function Home() {
   return (
     <>
+      <SEO {...seo.home} />
+
       <Hero />
       <Technologies />
       <AboutPreview />

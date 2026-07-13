@@ -3,7 +3,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 
 import { process } from "@/data/process";
 
-import ProcessCard from "./ProcessCard";
+import ProcessCard from "@/components/services/ProcessCard";
 
 
 export default function Process() {

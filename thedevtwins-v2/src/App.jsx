@@ -1,5 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
+import { StructuredData } from "@/components/seo";
+
 import MainLayout from "@/layouts/MainLayout";
 
 import Home from "@/pages/Home";
@@ -14,17 +16,21 @@ import { ROUTES } from "@/constants/routes";
 
 export default function App() {
   return (
-    <Routes>
-      <Route element={<MainLayout />}>
-        <Route path={ROUTES.HOME} element={<Home />} />
-        <Route path={ROUTES.ABOUT} element={<About />} />
-        <Route path={ROUTES.SERVICES} element={<Services />} />
-        <Route path={ROUTES.PROJECTS} element={<Projects />} />
-        <Route path={ROUTES.SKILLS} element={<Skills />} />
-        <Route path={ROUTES.CONTACT} element={<Contact />} />
-      </Route>
+    <>
+      <StructuredData />
 
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+      <Routes>
+        <Route element={<MainLayout />}>
+          <Route path={ROUTES.HOME} element={<Home />} />
+          <Route path={ROUTES.ABOUT} element={<About />} />
+          <Route path={ROUTES.SERVICES} element={<Services />} />
+          <Route path={ROUTES.PROJECTS} element={<Projects />} />
+          <Route path={ROUTES.SKILLS} element={<Skills />} />
+          <Route path={ROUTES.CONTACT} element={<Contact />} />
+        </Route>
+
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </>
   );
 }

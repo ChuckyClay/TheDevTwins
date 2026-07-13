@@ -3,7 +3,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 
 import { technologies } from "@/data/technologies";
 
-import TechnologyCard from "./TechnologyCard";
+import TechnologyCard from "@/components/home/technologies/TechnologyCard";
 
 export default function Technologies() {
   return (
@@ -17,7 +17,7 @@ export default function Technologies() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {technologies.map((technology) => (
             <TechnologyCard
-              key={technology.id}
+              key={technology}
               technology={technology}
             />
           ))}

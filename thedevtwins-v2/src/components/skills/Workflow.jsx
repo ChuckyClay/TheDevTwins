@@ -3,7 +3,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 
 import { workflow } from "@/data/workflow";
 
-import WorkflowStep from "./WorkflowStep";
+import WorkflowStep from "@/components/skills/WorkflowStep";
 
 export default function Workflow() {
   return (

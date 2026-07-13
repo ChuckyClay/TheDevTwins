@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Button from "@/components/ui/Button";
+import { ROUTES } from "@/constants/routes";
 
 import { services } from "@/data/services";
 
-import ServiceCard from "./ServiceCard";
+import ServiceCard from "@/components/home/services-preview/ServiceCard";
 
 export default function ServicesPreview() {
   return (
@@ -27,7 +28,7 @@ export default function ServicesPreview() {
         </div>
 
         <div className="mt-12 flex justify-center">
-          <Link to="/services">
+          <Link to={ROUTES.SERVICES}>
             <Button>
               View All Services
             </Button>

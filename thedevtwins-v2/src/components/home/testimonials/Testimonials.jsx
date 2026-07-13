@@ -3,7 +3,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 
 import { testimonials } from "@/data/testimonials";
 
-import TestimonialCard from "./TestimonialCard";
+import TestimonialCard from "@/components/home/testimonials/TestimonialCard";
 
 export default function Testimonials() {
   return (

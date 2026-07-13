@@ -3,7 +3,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 
 import { contactFaq } from "@/data/contactFaq";
 
-import FAQItem from "./FAQItem";
+import FAQItem from "@/components/contact/FAQItem";
 
 export default function FAQ() {
   return (

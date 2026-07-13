@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Button from "@/components/ui/Button";
+import { ROUTES } from "@/constants/routes";
 
 import { projects } from "@/data/projects";
 
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "@/components/home/projects-preview/ProjectCard";
 
 export default function ProjectsPreview() {
   return (
@@ -27,7 +28,7 @@ export default function ProjectsPreview() {
         </div>
 
         <div className="mt-12 flex justify-center">
-          <Link to="/projects">
+          <Link to={ROUTES.PROJECTS}>
             <Button>
               View All Projects
             </Button>

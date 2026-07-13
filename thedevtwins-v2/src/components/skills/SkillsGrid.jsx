@@ -3,7 +3,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 
 import { skills } from "@/data/skills";
 
-import SkillCard from "./SkillCard";
+import SkillCard from "@/components/skills/SkillCard";
 
 export default function SkillsGrid() {
   return (
