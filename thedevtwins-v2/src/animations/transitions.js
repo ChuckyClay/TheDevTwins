@@ -5,21 +5,36 @@ export const transition = {
 
 export const fastTransition = {
   duration: 0.3,
-  ease: [0.22, 1, 0.36, 1],
+  ease: transition.ease,
 };
 
 export const slowTransition = {
   duration: 0.9,
-  ease: [0.22, 1, 0.36, 1],
+  ease: transition.ease,
 };
 
 export const springTransition = {
   type: "spring",
-  stiffness: 120,
+  stiffness: 140,
   damping: 18,
 };
 
+export const hoverTransition = {
+  duration: 0.22,
+  ease: "easeOut",
+};
+
 export const staggerTransition = {
-  staggerChildren: 0.15,
-  delayChildren: 0.1,
+  delayChildren: 0.05,
+  staggerChildren: 0.08,
+};
+
+export const viewport = {
+  once: false,
+  amount: 0.15,
+};
+
+export const viewportOnce = {
+  once: true,
+  amount: 0.2,
 };

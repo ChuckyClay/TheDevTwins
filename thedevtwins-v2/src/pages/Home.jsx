@@ -6,9 +6,12 @@ import { ProjectsPreview } from "@/components/home/projects-preview";
 import { Testimonials } from "@/components/home/testimonials";
 import { CTA } from "@/components/home/cta";
 
-import AnimatedSection from "@/components/ui/AnimatedSection";
-
 import { SEO } from "@/components/seo";
+
+import {
+  AnimatedSection,
+  PageTransition,
+} from "@/components/motion";
 
 import { seo } from "@/data/seo";
 
@@ -17,31 +20,35 @@ export default function Home() {
     <>
       <SEO {...seo.home} />
 
-      <Hero />
+      <PageTransition>
 
-      <AnimatedSection>
-        <Technologies />
-      </AnimatedSection>
+        <Hero />
 
-      <AnimatedSection>
-        <AboutPreview />
-      </AnimatedSection>
+        <AnimatedSection direction="left">
+          <Technologies />
+        </AnimatedSection>
 
-      <AnimatedSection>
-        <ServicesPreview />
-      </AnimatedSection>
+        <AnimatedSection direction="right">
+          <AboutPreview />
+        </AnimatedSection>
 
-      <AnimatedSection>
-        <ProjectsPreview />
-      </AnimatedSection>
+        <AnimatedSection direction="left">
+          <ServicesPreview />
+        </AnimatedSection>
 
-      <AnimatedSection>
-        <Testimonials />
-      </AnimatedSection>
+        <AnimatedSection direction="right">
+          <ProjectsPreview />
+        </AnimatedSection>
 
-      <AnimatedSection>
-        <CTA />
-      </AnimatedSection>
+        <AnimatedSection direction="left">
+          <Testimonials />
+        </AnimatedSection>
+
+        <AnimatedSection direction="right">
+          <CTA />
+        </AnimatedSection>
+
+      </PageTransition>
     </>
   );
 }

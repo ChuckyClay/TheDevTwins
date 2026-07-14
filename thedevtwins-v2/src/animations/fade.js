@@ -1,38 +1,25 @@
 import { transition } from "./transitions";
 
-export const fade = {
-  hidden: {
-    opacity: 0,
-  },
-
-  visible: {
-    opacity: 1,
-    transition,
-  },
-};
-
 export const fadeUp = {
   hidden: {
     opacity: 0,
-    y: 50,
+    y: 40,
   },
 
   visible: {
     opacity: 1,
     y: 0,
-    transition,
+    transition
   },
 };
 
-export const fadeDown = {
+export const fadeIn = {
   hidden: {
     opacity: 0,
-    y: -50,
   },
 
   visible: {
     opacity: 1,
-    y: 0,
-    transition,
+    transition
   },
 };

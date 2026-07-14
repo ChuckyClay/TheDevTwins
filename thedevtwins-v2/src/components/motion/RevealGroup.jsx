@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 
-import { cardHover } from "@/animations";
+import { staggerContainer } from "@/animations";
 
-export default function HoverCard({
+export default function RevealGroup({
   children,
   className = "",
 }) {
   return (
     <motion.div
       className={className}
-      whileHover={cardHover}
+      variants={staggerContainer}
     >
       {children}
     </motion.div>

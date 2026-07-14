@@ -5,3 +5,5 @@ export * from "./hover";
 export * from "./scroll";
 export * from "./page";
 export * from "./transitions";
+export * from "./glow";
+export * from "./floating";

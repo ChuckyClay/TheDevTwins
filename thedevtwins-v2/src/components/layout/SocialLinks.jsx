@@ -24,7 +24,7 @@ export default function SocialLinks({
         return (
           <a
             key={social.id}
-            href={social.href}
+            href={social.url}
             target="_blank"
             rel="noopener noreferrer"
             aria-label={social.label}
