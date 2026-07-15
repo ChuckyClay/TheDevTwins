@@ -1,24 +1,28 @@
 import { memo } from "react";
 import {
-  ArrowRight,
   Globe,
-  MonitorSmartphone,
+  Monitor,
   Server,
   Palette,
-  ShieldCheck,
+  Shield,
   Network,
   Settings,
+  ArrowRight,
 } from "lucide-react";
 
 import Card from "@/components/ui/Card";
-import { HoverCard } from "@/components/motion";
+
+import {
+  HoverCard,
+  MagneticButton,
+} from "@/components/motion";
 
 const icons = {
   globe: Globe,
-  monitor: MonitorSmartphone,
+  monitor: Monitor,
   server: Server,
   palette: Palette,
-  shield: ShieldCheck,
+  shield: Shield,
   network: Network,
   settings: Settings,
 };
@@ -28,47 +32,37 @@ function ServiceCard({ service }) {
 
   return (
     <HoverCard>
-      <Card className="group relative flex h-full flex-col overflow-hidden border border-slate-800 bg-slate-900/60 backdrop-blur-sm transition-all duration-300 hover:border-cyan-500/40">
 
-        <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-cyan-500/10 blur-3xl opacity-0 transition duration-500 group-hover:opacity-100" />
+      <Card className="group h-full">
 
-        <div className="relative">
+        <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-cyan-500/10 text-cyan-400 transition-all duration-300 group-hover:bg-cyan-500 group-hover:text-white">
 
-          <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-cyan-500/10 transition-all duration-300 group-hover:scale-110 group-hover:bg-cyan-500/20">
-
-            <Icon
-              size={30}
-              className="text-cyan-400"
-            />
-
-          </div>
-
-          <h3 className="text-2xl font-bold text-white transition duration-300 group-hover:text-cyan-400">
-            {service.title}
-          </h3>
-
-          <p className="mt-5 leading-8 text-slate-400">
-            {service.description}
-          </p>
+          <Icon size={30} />
 
         </div>
 
-        <div className="mt-auto pt-8">
+        <h3 className="mt-8 text-2xl font-bold text-white">
+          {service.title}
+        </h3>
 
-          <div className="flex items-center gap-2 font-semibold text-cyan-400">
+        <p className="mt-5 leading-8 text-slate-400">
+          {service.description}
+        </p>
+
+        <MagneticButton className="mt-8 inline-flex">
+
+          <button className="flex items-center gap-2 text-cyan-400 transition hover:text-cyan-300">
 
             Learn More
 
-            <ArrowRight
-              size={18}
-              className="transition duration-300 group-hover:translate-x-2"
-            />
+            <ArrowRight size={18} />
 
-          </div>
+          </button>
 
-        </div>
+        </MagneticButton>
 
       </Card>
+
     </HoverCard>
   );
 }

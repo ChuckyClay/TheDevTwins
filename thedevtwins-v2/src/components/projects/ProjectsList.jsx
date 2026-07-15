@@ -3,16 +3,20 @@ import { useState } from "react";
 import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
 
+import {
+  Reveal,
+  RevealGroup,
+  RevealItem,
+} from "@/components/motion";
+
 import { projects } from "@/data/projects";
 
-import ProjectCard from "@/components/projects/ProjectCard";
-import ProjectFilter from "@/components/projects/ProjectFilter";
-
+import ProjectCard from "./ProjectCard";
+import ProjectFilter from "./ProjectFilter";
 
 export default function ProjectsList() {
-
-  const [activeCategory, setActiveCategory] = useState("All");
-
+  const [activeCategory, setActiveCategory] =
+    useState("All");
 
   const filteredProjects =
     activeCategory === "All"
@@ -22,35 +26,47 @@ export default function ProjectsList() {
             project.category === activeCategory
         );
 
-
   return (
     <section className="py-24">
 
       <Container>
 
-        <SectionTitle
-          title="Featured Projects"
-          subtitle="A collection of applications and solutions we have developed."
-        />
+        <Reveal>
 
+          <SectionTitle
+            badge="FEATURED WORK"
+            title="Projects That Reflect Our Expertise"
+            subtitle="Each project demonstrates our commitment to performance, scalability, security and user experience."
+          />
 
-        <ProjectFilter
-          activeCategory={activeCategory}
-          setActiveCategory={setActiveCategory}
-        />
+        </Reveal>
 
+        <Reveal className="mt-12">
 
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <ProjectFilter
+            activeCategory={activeCategory}
+            setActiveCategory={setActiveCategory}
+          />
 
-          {filteredProjects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              project={project}
-            />
-          ))}
+        </Reveal>
 
-        </div>
+        <RevealGroup className="mt-14">
 
+          <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+
+            {filteredProjects.map((project) => (
+
+              <RevealItem key={project.id}>
+
+                <ProjectCard project={project} />
+
+              </RevealItem>
+
+            ))}
+
+          </div>
+
+        </RevealGroup>
 
       </Container>
 

@@ -18,7 +18,7 @@ export default function Team() {
         />
 
 
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="mx-auto mt-14 grid max-w-6xl gap-8 lg:grid-cols-2">
 
           {team.map((member) => (
             <TeamCard

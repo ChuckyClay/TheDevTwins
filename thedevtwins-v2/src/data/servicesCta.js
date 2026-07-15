@@ -1,16 +1,18 @@
 export const servicesCta = {
-  title: "Have A Project In Mind?",
+  badge: "START YOUR PROJECT",
+
+  title: "Let's Build Something Exceptional Together",
 
   description:
-    "Let's discuss your idea and create a secure, scalable, and effective digital solution together.",
+    "Whether you need a professional website, a custom web application, a secure backend system or long-term technical support, we're ready to help transform your ideas into reliable digital solutions.",
 
   primaryButton: {
-    text: "Start A Project",
+    text: "Start Your Project",
     link: "/contact",
   },
 
   secondaryButton: {
-    text: "View Projects",
+    text: "View Our Projects",
     link: "/projects",
   },
 };

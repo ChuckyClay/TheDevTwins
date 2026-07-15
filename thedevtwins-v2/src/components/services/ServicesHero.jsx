@@ -1,33 +1,59 @@
+import { Code2 } from "lucide-react";
+
 import Container from "@/components/ui/Container";
 import Badge from "@/components/ui/Badge";
 
-import { servicesPage } from "@/data/servicesPage";
+import {
+  Reveal,
+  Floating,
+} from "@/components/motion";
 
+import { servicesPage } from "@/data/servicesPage";
 
 export default function ServicesHero() {
   return (
-    <section className="py-24">
+    <section className="relative overflow-hidden py-28">
+
+      {/* Background Glow */}
+
+      <div className="absolute left-1/2 top-0 h-96 w-96 -translate-x-1/2 rounded-full bg-cyan-500/10 blur-3xl" />
+
       <Container>
 
-        <div className="mx-auto max-w-3xl text-center">
+        <Reveal>
 
-          <Badge>
-            {servicesPage.hero.badge}
-          </Badge>
+          <div className="relative mx-auto max-w-4xl text-center">
 
+            <Floating>
 
-          <h1 className="mt-6 text-5xl font-extrabold leading-tight text-white lg:text-6xl">
-            {servicesPage.hero.title}
-          </h1>
+              <Badge className="inline-flex items-center gap-2">
 
+                <Code2 size={16} />
 
-          <p className="mt-6 text-lg leading-8 text-slate-400">
-            {servicesPage.hero.description}
-          </p>
+                {servicesPage.hero.badge}
 
-        </div>
+              </Badge>
+
+            </Floating>
+
+            <h1 className="mt-8 text-5xl font-extrabold leading-tight tracking-tight text-white md:text-6xl lg:text-7xl">
+
+              {servicesPage.hero.title}
+
+            </h1>
+
+            <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-slate-400">
+
+              {servicesPage.hero.description}
+
+            </p>
+
+          </div>
+
+        </Reveal>
 
       </Container>
+
     </section>
   );
 }

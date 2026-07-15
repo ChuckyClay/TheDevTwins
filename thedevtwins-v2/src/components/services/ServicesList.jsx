@@ -2,6 +2,7 @@ import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
 
 import {
+  Reveal,
   RevealGroup,
   RevealItem,
 } from "@/components/motion";
@@ -12,28 +13,34 @@ import ServiceCard from "./ServiceCard";
 
 export default function ServicesList() {
   return (
-    <section className="py-20 lg:py-24">
+    <section className="py-24">
 
       <Container>
 
-        <RevealGroup>
+        <Reveal>
 
-          <RevealItem>
+          <SectionTitle
+            badge="WHAT WE DO"
+            title="Professional Services Tailored To Your Business"
+            subtitle="We provide complete software solutions, from planning and development to deployment, security and long-term support."
+          />
 
-            <SectionTitle
-              badge="OUR SERVICES"
-              title="Solutions Built Around Your Business"
-              subtitle="From beautiful websites to scalable software platforms and secure backend systems, we build digital products that help businesses grow."
-            />
+        </Reveal>
 
-          </RevealItem>
+        <RevealGroup className="mt-16">
 
-          <div className="mt-14 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
 
             {services.map((service) => (
+
               <RevealItem key={service.id}>
-                <ServiceCard service={service} />
+
+                <ServiceCard
+                  service={service}
+                />
+
               </RevealItem>
+
             ))}
 
           </div>

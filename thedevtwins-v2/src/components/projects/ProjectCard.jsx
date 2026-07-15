@@ -1,24 +1,35 @@
 import { memo } from "react";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { FaGithub } from "react-icons/fa6";
 
 import Card from "@/components/ui/Card";
 import { HoverCard } from "@/components/motion";
+import {
+  CalendarDays,
+  MonitorSmartphone,
+} from "lucide-react";
 
 function ProjectCard({ project }) {
   return (
     <HoverCard>
-      <Card className="group overflow-hidden border border-slate-800 bg-slate-900/60 backdrop-blur-sm transition-all duration-300 hover:border-cyan-500/40">
+      <Card className="group overflow-hidden border border-slate-800 bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:border-cyan-500/40 hover:shadow-2xl hover:shadow-cyan-500/10">
 
         {/* Project Preview */}
-        <div className="relative flex h-56 items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+          <div className="relative flex h-56 items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
 
-          <div className="absolute inset-0 bg-cyan-500/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+            <div className="absolute inset-0 bg-cyan-500/5 opacity-0 transition duration-300 group-hover:opacity-100" />
 
-          <span className="relative text-slate-500 transition-colors duration-300 group-hover:text-cyan-400">
-            Project Preview
-          </span>
 
-        </div>
+
+            <div className="relative flex flex-col items-center gap-3 text-slate-500 group-hover:text-cyan-400">
+
+              <MonitorSmartphone size={44} />
+
+              <span>Project Preview</span>
+
+            </div>
+
+          </div>
 
         {/* Category + Status */}
 
@@ -38,9 +49,13 @@ function ProjectCard({ project }) {
             {project.status}
           </span>
 
-          <span className="ml-auto text-sm text-slate-500">
-            {project.year}
-          </span>
+          <div className="ml-auto flex items-center gap-1 text-sm text-slate-500">
+
+              <CalendarDays size={15} />
+
+              {project.year}
+
+          </div>
 
         </div>
 
@@ -52,7 +67,7 @@ function ProjectCard({ project }) {
 
         {/* Description */}
 
-        <p className="mt-4 leading-7 text-slate-400">
+        <p className="mt-4 min-h-[84px] leading-7 text-slate-400">
           {project.description}
         </p>
 
@@ -77,6 +92,12 @@ function ProjectCard({ project }) {
 
           <div className="flex gap-3">
 
+            {project.featured && (
+              <span className="absolute left-4 top-4 rounded-full bg-cyan-500 px-3 py-1 text-xs font-semibold text-white">
+                Featured
+              </span>
+            )}
+
             {project.github !== "#" && (
               <a
                 href={project.github}
@@ -84,7 +105,7 @@ function ProjectCard({ project }) {
                 rel="noreferrer"
                 className="flex items-center gap-2 rounded-lg border border-slate-700 px-4 py-2 text-slate-300 transition hover:border-cyan-500 hover:text-cyan-400"
               >
-                <Github size={18} />
+                <FaGithub size={18} />
                 GitHub
               </a>
             )}

@@ -1,87 +1,215 @@
+import {
+  CheckCircle2,
+  CircleAlert,
+  Lightbulb,
+} from "lucide-react";
+
 import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
+
+import {
+  Reveal,
+  RevealGroup,
+  RevealItem,
+} from "@/components/motion";
 
 import { projects } from "@/data/projects";
 
 export default function ProjectDetails() {
   return (
     <section className="py-24">
+
       <Container>
 
-        <SectionTitle
-          title="Project Case Studies"
-          subtitle="A closer look at how we approach real-world software challenges."
-        />
+        <Reveal>
 
-        <div className="mt-16 space-y-16">
-          {projects.map((project) => (
-            <div
-              key={project.id}
-              className="rounded-3xl border border-slate-800 bg-slate-900 p-8"
-            >
-              <div className="flex flex-wrap items-center gap-3">
-                <span className="rounded-full bg-cyan-500/10 px-3 py-1 text-sm text-cyan-400">
-                  {project.category}
-                </span>
+          <SectionTitle
+            badge="CASE STUDIES"
+            title="Behind Every Successful Project"
+            subtitle="Every project starts with understanding a real problem, designing an effective solution and delivering software built for long-term success."
+          />
 
-                <span className="rounded-full bg-slate-800 px-3 py-1 text-sm text-slate-300">
-                  {project.status}
-                </span>
-              </div>
+        </Reveal>
 
-              <h2 className="mt-6 text-3xl font-bold text-white">
-                {project.title}
-              </h2>
+        <RevealGroup className="mt-20">
 
-              <p className="mt-4 text-slate-400">
-                {project.description}
-              </p>
+          <div className="space-y-16">
 
-              <div className="mt-8 grid gap-8 lg:grid-cols-2">
+            {projects.map((project) => (
 
-                <div>
-                  <h3 className="text-xl font-semibold text-white">
-                    Problem
-                  </h3>
+              <RevealItem key={project.id}>
 
-                  <p className="mt-3 leading-7 text-slate-400">
-                    {project.problem}
-                  </p>
-                </div>
+                <div className="rounded-3xl border border-slate-800 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-950 p-8 lg:p-10">
 
-                <div>
-                  <h3 className="text-xl font-semibold text-white">
-                    Solution
-                  </h3>
+                  {/* Header */}
 
-                  <p className="mt-3 leading-7 text-slate-400">
-                    {project.solution}
-                  </p>
-                </div>
+                  <div className="flex flex-wrap items-center gap-3">
 
-              </div>
+                    <span className="rounded-full bg-cyan-500/10 px-3 py-1 text-sm font-medium text-cyan-400">
 
-              <div className="mt-10">
-                <h3 className="text-xl font-semibold text-white">
-                  Key Features
-                </h3>
+                      {project.category}
 
-                <ul className="mt-4 grid gap-3 md:grid-cols-2">
-                  {project.features.map((feature) => (
-                    <li
-                      key={feature}
-                      className="rounded-xl bg-slate-800 px-4 py-3 text-slate-300"
+                    </span>
+
+                    <span
+                      className={`rounded-full px-3 py-1 text-sm font-medium ${
+                        project.status === "Completed"
+                          ? "bg-green-500/10 text-green-400"
+                          : "bg-amber-500/10 text-amber-400"
+                      }`}
                     >
-                      • {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          ))}
-        </div>
+                      {project.status}
+                    </span>
+
+                    <span className="ml-auto text-sm text-slate-500">
+
+                      {project.year}
+
+                    </span>
+
+                  </div>
+
+                  <h2 className="mt-6 text-3xl font-bold text-white">
+
+                    {project.title}
+
+                  </h2>
+
+                  <p className="mt-5 max-w-4xl leading-8 text-slate-400">
+
+                    {project.description}
+
+                  </p>
+
+                  {/* Problem & Solution */}
+
+                  <div className="mt-12 grid gap-8 lg:grid-cols-2">
+
+                    <div className="rounded-2xl border border-slate-800 bg-slate-900/50 p-6">
+
+                      <div className="flex items-center gap-3">
+
+                        <CircleAlert className="text-red-400" />
+
+                        <h3 className="text-xl font-semibold text-white">
+
+                          Problem
+
+                        </h3>
+
+                      </div>
+
+                      <p className="mt-5 leading-8 text-slate-400">
+
+                        {project.problem}
+
+                      </p>
+
+                    </div>
+
+                    <div className="rounded-2xl border border-slate-800 bg-slate-900/50 p-6">
+
+                      <div className="flex items-center gap-3">
+
+                        <Lightbulb className="text-cyan-400" />
+
+                        <h3 className="text-xl font-semibold text-white">
+
+                          Solution
+
+                        </h3>
+
+                      </div>
+
+                      <p className="mt-5 leading-8 text-slate-400">
+
+                        {project.solution}
+
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                  {/* Features */}
+
+                  <div className="mt-12">
+
+                    <h3 className="text-2xl font-semibold text-white">
+
+                      Key Features
+
+                    </h3>
+
+                    <div className="mt-6 grid gap-4 md:grid-cols-2">
+
+                      {project.features.map((feature) => (
+
+                        <div
+                          key={feature}
+                          className="flex items-center gap-3 rounded-xl border border-slate-800 bg-slate-900/60 p-4"
+                        >
+
+                          <CheckCircle2
+                            size={18}
+                            className="text-cyan-400"
+                          />
+
+                          <span className="text-slate-300">
+
+                            {feature}
+
+                          </span>
+
+                        </div>
+
+                      ))}
+
+                    </div>
+
+                  </div>
+
+                  {/* Technologies */}
+
+                  <div className="mt-12">
+
+                    <h3 className="text-2xl font-semibold text-white">
+
+                      Technology Stack
+
+                    </h3>
+
+                    <div className="mt-6 flex flex-wrap gap-3">
+
+                      {project.technologies.map((technology) => (
+
+                        <span
+                          key={technology}
+                          className="rounded-full border border-slate-700 bg-slate-800 px-4 py-2 text-sm font-medium text-slate-300"
+                        >
+
+                          {technology}
+
+                        </span>
+
+                      ))}
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </RevealItem>
+
+            ))}
+
+          </div>
+
+        </RevealGroup>
 
       </Container>
+
     </section>
   );
 }

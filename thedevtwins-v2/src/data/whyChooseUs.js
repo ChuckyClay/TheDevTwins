@@ -1,38 +1,43 @@
 export const whyChooseUs = [
   {
     id: 1,
-    title: "Security-Focused Development",
+    title: "Security First",
     description:
-      "We consider security throughout the development process, helping create solutions that are reliable and protected.",
+      "Security is integrated into every stage of development to help protect your application and users.",
   },
+
   {
     id: 2,
     title: "Modern Technologies",
     description:
-      "We use current technologies and industry practices to build scalable and maintainable systems.",
+      "We use up-to-date frameworks and tools to build scalable, maintainable and future-ready software.",
   },
+
   {
     id: 3,
-    title: "Custom Solutions",
+    title: "Performance Optimized",
     description:
-      "Every project is approached differently, with solutions designed around specific business requirements.",
+      "Our applications are designed to be fast, responsive and optimized for an excellent user experience.",
   },
+
   {
     id: 4,
-    title: "Quality & Reliability",
+    title: "Client Focused",
     description:
-      "We focus on clean code, proper testing, and dependable solutions that provide long-term value.",
+      "Every solution is tailored around your business goals, requirements and long-term success.",
   },
+
   {
     id: 5,
-    title: "Clear Communication",
+    title: "Scalable Solutions",
     description:
-      "We keep clients involved through clear updates, discussions, and transparent project progress.",
+      "We build systems that can grow with your business without requiring major redesigns later.",
   },
+
   {
     id: 6,
-    title: "Continuous Improvement",
+    title: "Reliable Support",
     description:
-      "We continue learning and improving to deliver better solutions as technology evolves.",
+      "Our relationship doesn't end after deployment—we provide ongoing maintenance and technical support.",
   },
 ];

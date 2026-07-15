@@ -1,38 +1,49 @@
 export const process = [
   {
     id: 1,
+    number: "01",
     title: "Discovery",
     description:
-      "We understand your goals, requirements, challenges, and expectations before starting development.",
+      "We begin by understanding your goals, requirements and challenges to define the best solution.",
   },
+
   {
     id: 2,
+    number: "02",
     title: "Planning",
     description:
-      "We create a clear project roadmap, choose the right technologies, and define the system structure.",
+      "We design the project architecture, timeline and technology stack before development begins.",
   },
+
   {
     id: 3,
+    number: "03",
     title: "Development",
     description:
-      "We build clean, scalable, and maintainable solutions using modern development practices.",
+      "Our team builds your solution using modern technologies while maintaining clean, scalable code.",
   },
+
   {
     id: 4,
+    number: "04",
     title: "Testing",
     description:
-      "We test functionality, performance, and security to ensure the solution works reliably.",
+      "Every feature is tested for quality, security and performance before deployment.",
   },
+
   {
     id: 5,
+    number: "05",
     title: "Deployment",
     description:
-      "We deploy the solution and configure the required infrastructure for production use.",
+      "We deploy your application using reliable cloud infrastructure and industry best practices.",
   },
+
   {
     id: 6,
+    number: "06",
     title: "Support",
     description:
-      "We provide updates, improvements, and technical support after delivery.",
+      "After launch we continue providing updates, maintenance and technical support whenever needed.",
   },
 ];

@@ -1,10 +1,10 @@
 export const servicesPage = {
   hero: {
-    badge: "Our Services",
+    badge: "OUR SERVICES",
 
-    title: "Technology Solutions Designed For Growth",
+    title: "Building Powerful Digital Solutions For Modern Businesses",
 
     description:
-      "We build modern websites, scalable applications, secure backend systems, and digital solutions that help businesses and organizations achieve their goals.",
+      "From professional websites to enterprise web applications, secure backend systems and ongoing technical support, we deliver technology solutions designed to help your business grow with confidence.",
   },
 };

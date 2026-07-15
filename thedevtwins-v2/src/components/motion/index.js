@@ -1,4 +1,5 @@
 export { default as AnimatedSection } from "./AnimatedSection";
+export { default as Reveal } from "./Reveal";
 export { default as RevealGroup } from "./RevealGroup";
 export { default as RevealItem } from "./RevealItem";
 export { default as Parallax } from "./Parallax";

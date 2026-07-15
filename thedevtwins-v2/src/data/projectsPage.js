@@ -1,10 +1,10 @@
 export const projectsPage = {
   hero: {
-    badge: "Our Projects",
+    badge: "OUR PORTFOLIO",
 
-    title: "Solutions We Have Built",
+    title: "Building Modern Digital Experiences",
 
     description:
-      "Explore some of our software projects, experiments, and digital solutions created using modern technologies.",
+      "Explore a collection of web applications, business systems and digital platforms we've designed and developed using modern technologies, security best practices and scalable architectures.",
   },
 };

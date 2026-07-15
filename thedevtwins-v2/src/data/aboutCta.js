@@ -1,16 +1,18 @@
 export const aboutCta = {
-  title: "Let's Build Something Meaningful Together",
+  badge: "LET'S WORK TOGETHER",
+
+  title: "Ready to Build Your Next Digital Solution?",
 
   description:
-    "Whether you need a website, web application, backend system, or a technology partner for your next idea, we are ready to help.",
+    "Whether you're starting from scratch or improving an existing system, The DevTwins is ready to help you build secure, scalable and modern software tailored to your goals.",
 
   primaryButton: {
-    text: "Contact Us",
+    text: "Start a Project",
     link: "/contact",
   },
 
   secondaryButton: {
-    text: "View Services",
+    text: "View Our Services",
     link: "/services",
   },
 };

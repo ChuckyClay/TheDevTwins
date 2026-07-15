@@ -25,9 +25,9 @@ export const team = [
   {
     id: 2,
     name: "Ben Mwaura",
-    role: "FullStack Developer",
+    role: "Frontend Developer & UI/UX Engineer",
     description:
-      "FullStack developer focused on building modern web applications.",
+      "Frontend developer and UI/UX engineer with a focus on creating intuitive and engaging user experiences.",
 
     skills: [
       "HTML",

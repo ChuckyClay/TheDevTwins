@@ -1,16 +1,24 @@
 export const cta = {
-  title: "Ready To Build Something Great?",
+  badge: "LET'S WORK TOGETHER",
+
+  title: "Let's Build Something Exceptional Together",
 
   description:
-    "Have a project idea or need a reliable technology partner? Let's discuss how we can help turn your ideas into secure and scalable digital solutions.",
+    "Whether you need a modern website, a powerful web application, or a secure backend solution, The DevTwins is ready to transform your ideas into reliable digital products that drive real results.",
+
+  stats: [
+    "Modern Technologies",
+    "Secure Solutions",
+    "Responsive Design",
+  ],
 
   primaryButton: {
-    text: "Start A Project",
+    text: "Start Your Project",
     link: "/contact",
   },
 
   secondaryButton: {
-    text: "View Our Services",
+    text: "Explore Services",
     link: "/services",
   },
 };
