@@ -19,12 +19,13 @@ export default function Technologies() {
 
           <RevealItem>
             <SectionTitle
-              title="Technologies We Use"
-              subtitle="We build reliable and scalable software using modern technologies across the frontend, backend, databases, and cloud ecosystem."
+                badge="TECH STACK"
+                title="Technologies We Use"
+                subtitle="Modern technologies carefully selected to build fast, secure and scalable digital products."
             />
           </RevealItem>
 
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
             {technologies.map((technology) => (
               <RevealItem key={technology.id ?? technology.name}>
                 <TechnologyCard technology={technology} />

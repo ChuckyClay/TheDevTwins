@@ -1,16 +1,23 @@
 export const about = {
-  badge: "About The DevTwins",
+  badge: "ABOUT THE DEVTWINS",
 
-  title: "Passionate Developers Building Modern Digital Solutions",
+  title: "Passionate Developers Building Secure & Modern Digital Solutions",
 
   description: [
-    "The DevTwins is a software development team dedicated to creating fast, secure, and scalable digital solutions for businesses, organizations, and individuals.",
+    "The DevTwins is a software development team dedicated to building fast, scalable and secure digital solutions for businesses, organizations and individuals.",
 
-    "Our expertise spans modern web development, backend systems, databases, networking, Linux, cloud technologies, and cybersecurity, allowing us to deliver reliable solutions tailored to each client's needs.",
+    "From modern websites and powerful web applications to backend systems, networking and cybersecurity, we combine technical expertise with clean design to deliver solutions that create real value.",
+  ],
+
+  highlights: [
+    "Modern Web Development",
+    "Backend Engineering",
+    "Cybersecurity Solutions",
+    "Networking Expertise",
   ],
 
   button: {
-    text: "Learn More",
+    text: "Discover Our Story",
     link: "/about",
   },
 };

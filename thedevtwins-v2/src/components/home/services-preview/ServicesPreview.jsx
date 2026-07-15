@@ -1,40 +1,71 @@
 import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 
 import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Button from "@/components/ui/Button";
-import { ROUTES } from "@/constants/routes";
 
+import {
+  RevealGroup,
+  RevealItem,
+} from "@/components/motion";
+
+import { ROUTES } from "@/constants/routes";
 import { services } from "@/data/services";
 
-import ServiceCard from "@/components/home/services-preview/ServiceCard";
+import ServiceCard from "./ServiceCard";
 
 export default function ServicesPreview() {
   return (
-    <section className="py-24">
+    <section className="py-20 lg:py-24">
+
       <Container>
-        <SectionTitle
-          title="Our Services"
-          subtitle="We deliver end-to-end digital solutions that help businesses establish, improve and secure their online presence."
-        />
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {services.map((service) => (
-            <ServiceCard
-              key={service.id}
-              service={service}
+        <RevealGroup>
+
+          <RevealItem>
+
+            <SectionTitle
+              badge="OUR SERVICES"
+              title="Helping Businesses Build Better Digital Products"
+              subtitle="We combine design, development, cybersecurity and networking expertise to deliver complete digital solutions that scale with your business."
             />
-          ))}
-        </div>
 
-        <div className="mt-12 flex justify-center">
-          <Link to={ROUTES.SERVICES}>
-            <Button>
-              View All Services
-            </Button>
-          </Link>
-        </div>
+          </RevealItem>
+
+          <div className="mt-14 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+
+            {services.slice(0, 6).map((service) => (
+              <RevealItem key={service.id}>
+                <ServiceCard service={service} />
+              </RevealItem>
+            ))}
+
+          </div>
+
+          <RevealItem>
+
+            <div className="mt-14 flex justify-center">
+
+              <Link to={ROUTES.SERVICES}>
+
+                <Button
+                  size="lg"
+                  rightIcon={<ArrowRight size={18} />}
+                >
+                  Explore All Services
+                </Button>
+
+              </Link>
+
+            </div>
+
+          </RevealItem>
+
+        </RevealGroup>
+
       </Container>
+
     </section>
   );
 }

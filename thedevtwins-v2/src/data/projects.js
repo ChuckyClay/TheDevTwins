@@ -9,7 +9,7 @@ export const projects = [
     category: "Web Application",
 
     description:
-      "A complete rental management platform for landlords and tenants with authentication, dashboards, messaging, and payment tracking.",
+      "A modern property management platform that enables landlords to manage tenants, payments, maintenance requests and communication.",
 
     problem:
       "Managing tenants, rent collection, occupancy, and communication manually is time-consuming, prone to errors, and difficult to scale.",
