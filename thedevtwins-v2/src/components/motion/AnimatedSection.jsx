@@ -26,14 +26,16 @@ export default function AnimatedSection({
   const MotionComponent = motion[as];
 
   return (
-    <MotionComponent
-      className={className}
-      variants={variants[direction]}
-      initial="hidden"
-      whileInView="visible"
-      viewport={viewport}
-    >
-      {children}
-    </MotionComponent>
+    <div className="overflow-hidden">
+      <MotionComponent
+        className={className}
+        variants={variants[direction]}
+        initial="hidden"
+        whileInView="visible"
+        viewport={viewport}
+      >
+        {children}
+      </MotionComponent>
+    </div>
   );
 }
