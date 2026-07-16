@@ -10,7 +10,7 @@ export default function NavLinks({
 }) {
   const directionClasses = {
     horizontal: "flex items-center gap-8",
-    vertical: "flex flex-col items-start gap-2",
+    vertical: "flex flex-col gap-2",
   };
 
   return (
@@ -25,11 +25,10 @@ export default function NavLinks({
           onClick={onNavigate}
           className={({ isActive }) =>
             cn(
-              "rounded-lg px-3 py-2 text-sm font-medium transition-all duration-300",
-              "hover:text-cyan-400",
+              "relative rounded-lg px-3 py-2 text-sm font-medium transition-all duration-300",
               isActive
-                ? "text-cyan-400"
-                : "text-slate-300"
+                ? "bg-cyan-500/10 text-cyan-400"
+                : "text-slate-300 hover:bg-slate-800/60 hover:text-white"
             )
           }
         >
