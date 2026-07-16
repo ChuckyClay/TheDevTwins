@@ -2,9 +2,9 @@ export const contactPage = {
   hero: {
     badge: "Get In Touch",
 
-    title: "Let's Discuss Your Next Project",
+    title: "Let's Build Something Amazing Together",
 
     description:
-      "Have a project in mind, need technical advice, or want to collaborate? We'd love to hear from you. Reach out through any of the channels below.",
+      "Whether you're launching a new website, building a business application, improving an existing system, or simply looking for technical advice, we'd love to hear about your ideas and help bring them to life.",
   },
 };

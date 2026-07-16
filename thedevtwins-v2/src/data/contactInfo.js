@@ -23,7 +23,7 @@ export const contactInfo = [
   {
     id: 4,
     title: "Availability",
-    value: "Monday – Saturday • 8:00 AM – 6:00 PM",
+    value: "Mon – Sat • 8:00 AM – 6:00 PM (EAT)",
     href: "#",
   },
 ];

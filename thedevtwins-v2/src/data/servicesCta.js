@@ -1,10 +1,8 @@
-export const servicesCta = {
-  badge: "START YOUR PROJECT",
-
-  title: "Let's Build Something Exceptional Together",
+export const skillsCta = {
+  title: "Ready To Build Your Next Digital Solution?",
 
   description:
-    "Whether you need a professional website, a custom web application, a secure backend system or long-term technical support, we're ready to help transform your ideas into reliable digital solutions.",
+    "From business websites to custom web applications, secure backend systems, and scalable software solutions, we're ready to turn your vision into reality with modern technologies and industry best practices.",
 
   primaryButton: {
     text: "Start Your Project",
@@ -12,7 +10,7 @@ export const servicesCta = {
   },
 
   secondaryButton: {
-    text: "View Our Projects",
+    text: "Explore Our Projects",
     link: "/projects",
   },
 };

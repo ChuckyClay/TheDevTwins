@@ -1,30 +1,39 @@
 import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
 
+import { Reveal } from "@/components/motion";
+
 import { technologies } from "@/data/technologies";
 
-import TechnologyBadge from "@/components/skills/TechnologyBadge";
+import TechnologyBadge from "./TechnologyBadge";
 
 export default function Technologies() {
   return (
-    <section className="py-24">
+    <section className="py-28">
+
       <Container>
 
-        <SectionTitle
-          title="Technologies We Use"
-          subtitle="We leverage modern technologies and industry-standard tools to build reliable, scalable, and maintainable software solutions."
-        />
+        <Reveal>
 
-        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+          <SectionTitle
+            title="Technologies We Work With"
+            subtitle="Our technology stack combines modern frameworks, secure backend solutions, cloud platforms, databases, and networking tools."
+          />
+
+        </Reveal>
+
+        <div className="mt-16 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+
           {technologies.map((technology) => (
-            <TechnologyBadge
-              key={technology}
-              technology={technology}
-            />
+            <Reveal key={technology.id}>
+              <TechnologyBadge technology={technology} />
+            </Reveal>
           ))}
+
         </div>
 
       </Container>
+
     </section>
   );
 }

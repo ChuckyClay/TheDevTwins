@@ -1,8 +1,10 @@
 export const projectsCta = {
-  title: "Ready to Build Your Next Project?",
+  badge: "LET'S BUILD TOGETHER",
+
+  title: "Have a Project in Mind?",
 
   description:
-    "Whether you're starting from an idea or improving an existing system, we're ready to help turn your vision into reality.",
+    "Whether you're launching a new startup, modernizing an existing platform, or building custom software, The DevTwins is ready to help you create secure, scalable, and high-performance digital solutions.",
 
   primaryButton: {
     text: "Start Your Project",
@@ -10,7 +12,7 @@ export const projectsCta = {
   },
 
   secondaryButton: {
-    text: "View Our Services",
+    text: "Explore Services",
     link: "/services",
   },
 };
