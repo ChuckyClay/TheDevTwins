@@ -3,6 +3,7 @@ import {
   Quote,
   Star,
 } from "lucide-react";
+import { Parallax } from "@/components/motion";
 
 import Card from "@/components/ui/Card";
 import { HoverCard } from "@/components/motion";
@@ -14,7 +15,9 @@ function TestimonialCard({ testimonial }) {
       <Card className="group relative h-full overflow-hidden border border-slate-800 bg-slate-900/60 backdrop-blur-sm transition-all duration-300 hover:border-cyan-500/40">
 
         {/* Glow */}
-
+        <Parallax offset={-60}>
+          <div className="absolute -left-10 -top-10 h-32 w-32 rounded-full bg-cyan-500/10 blur-3xl opacity-0 transition duration-300 group-hover:opacity-100" />
+        </Parallax>
         <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-cyan-500/10 blur-3xl opacity-0 transition duration-300 group-hover:opacity-100" />
 
         <Quote

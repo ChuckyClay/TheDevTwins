@@ -10,13 +10,13 @@ import { siteConfig } from "@/constants/site";
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden border-t border-slate-800 bg-slate-950">
+    <footer className="relative overflow-hidden border-t border-slate-800/70 bg-slate-950/60 backdrop-blur-[1px]">
 
       {/* Background Glow */}
 
-      <div className="absolute left-1/2 top-0 h-72 w-72 -translate-x-1/2 rounded-full bg-cyan-500/5 blur-[120px]" />
+      <div className="pointer-events-none absolute left-1/2 top-0 h-72 w-72 -translate-x-1/2 rounded-full bg-cyan-500/5 blur-[80px]" />
 
-      <Container className="relative py-20">
+      <Container className="relative z-10 py-20">
 
         <div className="grid gap-14 lg:grid-cols-4">
 
@@ -59,25 +59,23 @@ export default function Footer() {
               </li>
 
               <li>
-
                 <a
                   href={`mailto:${siteConfig.email}`}
                   className="transition hover:text-cyan-400"
                 >
                   {siteConfig.email}
                 </a>
-
               </li>
 
               <li>
-
                 <a
                   href={`https://wa.me/${siteConfig.whatsapp.replace(/\+/g, "")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="transition hover:text-cyan-400"
                 >
                   WhatsApp
                 </a>
-
               </li>
 
             </ul>
@@ -104,7 +102,7 @@ export default function Footer() {
 
         {/* Bottom */}
 
-        <div className="mt-20 flex flex-col items-center justify-between gap-6 border-t border-slate-800 pt-8 md:flex-row">
+        <div className="mt-20 flex flex-col items-center justify-between gap-6 border-t border-slate-800/70 pt-8 md:flex-row">
 
           <p className="text-sm text-slate-500">
             {siteConfig.copyright}
@@ -117,7 +115,8 @@ export default function Footer() {
                 behavior: "smooth",
               })
             }
-            className="group flex h-12 w-12 items-center justify-center rounded-full border border-slate-800 bg-slate-900 transition duration-300 hover:-translate-y-1 hover:border-cyan-500 hover:bg-cyan-500 hover:text-slate-950"
+            aria-label="Scroll to top"
+            className="group flex h-12 w-12 items-center justify-center rounded-full border border-slate-800 bg-slate-900/80 transition duration-300 hover:-translate-y-1 hover:border-cyan-500 hover:bg-cyan-500 hover:text-slate-950"
           >
             <ArrowUp className="transition duration-300 group-hover:scale-110" />
           </button>

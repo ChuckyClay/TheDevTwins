@@ -18,12 +18,6 @@ export default function ContactHero() {
   return (
     <section className="relative overflow-hidden py-32">
 
-      {/* Background */}
-
-      <div className="absolute inset-0 bg-gradient-to-b from-cyan-500/5 via-transparent to-transparent" />
-
-      <div className="absolute left-1/4 top-20 h-72 w-72 rounded-full bg-cyan-500/10 blur-3xl" />
-
       <Container>
 
         <Reveal>

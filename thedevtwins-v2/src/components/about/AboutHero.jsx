@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
 import Container from "@/components/ui/Container";
+import { Parallax } from "@/components/motion";
 
 import {
   Floating,
@@ -20,7 +21,9 @@ export default function AboutHero() {
 
       <div className="absolute inset-0">
 
+      <Parallax offset={-80}>
         <div className="absolute left-1/2 top-0 h-96 w-96 -translate-x-1/2 rounded-full bg-cyan-500/10 blur-3xl" />
+      </Parallax>
 
         <div className="absolute inset-0 bg-[linear-gradient(rgba(34,211,238,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(34,211,238,0.04)_1px,transparent_1px)] bg-[size:34px_34px]" />
 

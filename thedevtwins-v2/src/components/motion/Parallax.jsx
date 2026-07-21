@@ -1,26 +1,21 @@
-import { motion } from "framer-motion";
-
-import {
-  useParallaxSlow,
-  useParallaxFast,
-} from "@/animations";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function Parallax({
   children,
-  speed = "slow",
+  offset = 120,
   className = "",
 }) {
-  const slow = useParallaxSlow();
-  const fast = useParallaxFast();
+  const { scrollY } = useScroll();
 
-  const style =
-    speed === "fast"
-      ? fast
-      : slow;
+  const y = useTransform(
+    scrollY,
+    [0, 1200],
+    [0, offset]
+  );
 
   return (
     <motion.div
-      style={style}
+      style={{ y }}
       className={className}
     >
       {children}

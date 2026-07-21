@@ -1,8 +1,5 @@
 import { memo } from "react";
 import {
-  Code2,
-} from "lucide-react";
-import {
   FaGithub,
   FaLinkedin,
 } from "react-icons/fa6";
@@ -26,9 +23,13 @@ function TeamCard({ member }) {
 
           <Floating>
 
-            <div className="flex h-32 w-32 items-center justify-center rounded-full border border-cyan-500/30 bg-slate-800 text-cyan-400">
+            <div className="h-32 w-32 overflow-hidden rounded-full border border-cyan-500/30 bg-slate-800">
 
-              <Code2 size={42} />
+              <img
+                src={member.image}
+                alt={member.name}
+                className="h-full w-full object-cover object-center"
+              />
 
             </div>
 

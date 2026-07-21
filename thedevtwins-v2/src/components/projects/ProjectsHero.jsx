@@ -18,16 +18,6 @@ export default function ProjectsHero() {
   return (
     <section className="relative overflow-hidden py-28">
 
-      {/* Background */}
-
-      <div className="absolute inset-0">
-
-        <div className="absolute left-1/2 top-0 h-96 w-96 -translate-x-1/2 rounded-full bg-cyan-500/10 blur-3xl" />
-
-        <div className="absolute right-20 bottom-10 h-64 w-64 rounded-full bg-cyan-500/5 blur-3xl" />
-
-      </div>
-
       <Container>
 
         <Reveal>
