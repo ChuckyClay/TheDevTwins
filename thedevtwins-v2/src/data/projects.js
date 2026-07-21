@@ -1,3 +1,7 @@
+import shantelPreview from "@/assets/images/shantel-preview.png";
+import stritaPreview from "@/assets/images/strita-preview.png";
+import portfolioPreview from "@/assets/images/portfolio-preview.png";
+
 export const projects = [
   {
     id: 1,
@@ -7,6 +11,8 @@ export const projects = [
     slug: "tenant-management-system",
 
     category: "Web Application",
+
+    image: shantelPreview,
 
     description:
       "A modern property management platform that enables landlords to manage tenants, payments, maintenance requests and communication.",
@@ -56,6 +62,8 @@ export const projects = [
 
     category: "Website",
 
+    image: stritaPreview,
+
     description:
       "A modern Catholic parish website featuring announcements, events, Mass schedules, daily readings, contact information, and an administration dashboard.",
 
@@ -102,6 +110,8 @@ export const projects = [
     slug: "the-devtwins-portfolio",
 
     category: "Portfolio",
+
+    image: portfolioPreview,
 
     description:
       "The official company portfolio showcasing our services, technologies, projects, team, and development process.",

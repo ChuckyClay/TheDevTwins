@@ -13,17 +13,17 @@ function ProjectCard({ project }) {
 
       <Card className="group relative h-full overflow-hidden border border-slate-800 bg-slate-900/60 backdrop-blur-sm transition-all duration-300 hover:border-cyan-500/40">
 
-        {/* Glow */}
+        <div className="relative h-48 overflow-hidden rounded-xl bg-slate-900">
 
-        <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-cyan-500/10 blur-3xl opacity-0 transition duration-300 group-hover:opacity-100" />
+          <img
+            src={project.image}
+            alt={project.title}
+            className="h-full w-full object-cover object-center transition duration-500 group-hover:scale-105"
+          />
 
-        {/* Preview */}
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/30 via-transparent to-transparent" />
 
-        <div className="relative flex h-48 items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-
-          <span className="text-slate-500 transition duration-300 group-hover:text-cyan-400">
-            Project Preview
-          </span>
+          <div className="absolute inset-0 bg-cyan-500/0 transition duration-300 group-hover:bg-cyan-500/5" />
 
         </div>
 

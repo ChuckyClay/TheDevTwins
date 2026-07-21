@@ -15,21 +15,19 @@ function ProjectCard({ project }) {
       <Card className="group overflow-hidden border border-slate-800 bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:border-cyan-500/40 hover:shadow-2xl hover:shadow-cyan-500/10">
 
         {/* Project Preview */}
-          <div className="relative flex h-56 items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+        <div className="relative h-56 overflow-hidden rounded-xl bg-slate-900">
 
-            <div className="absolute inset-0 bg-cyan-500/5 opacity-0 transition duration-300 group-hover:opacity-100" />
+          <img
+            src={project.image}
+            alt={project.title}
+            className="h-full w-full object-cover object-center transition duration-500 group-hover:scale-105"
+          />
 
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/35 via-transparent to-transparent" />
 
+          <div className="absolute inset-0 bg-cyan-500/0 transition duration-300 group-hover:bg-cyan-500/5" />
 
-            <div className="relative flex flex-col items-center gap-3 text-slate-500 group-hover:text-cyan-400">
-
-              <MonitorSmartphone size={44} />
-
-              <span>Project Preview</span>
-
-            </div>
-
-          </div>
+        </div>
 
         {/* Category + Status */}
 
