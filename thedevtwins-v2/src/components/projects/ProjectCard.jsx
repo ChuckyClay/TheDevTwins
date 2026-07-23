@@ -6,7 +6,6 @@ import Card from "@/components/ui/Card";
 import { HoverCard } from "@/components/motion";
 import {
   CalendarDays,
-  MonitorSmartphone,
 } from "lucide-react";
 
 function ProjectCard({ project }) {

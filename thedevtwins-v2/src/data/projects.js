@@ -1,6 +1,8 @@
 import shantelPreview from "@/assets/images/shantel-preview.png";
 import stritaPreview from "@/assets/images/strita-preview.png";
 import portfolioPreview from "@/assets/images/portfolio-preview.png";
+import rentopiaPreview from "@/assets/images/rentopia-preview.png";
+
 
 export const projects = [
   {
@@ -148,5 +150,51 @@ export const projects = [
     featured: true,
 
     year: "2026",
+  },
+
+  {
+    id: 4,
+
+    title: "Rentopia Class Project",
+
+    slug: "Rentopia",
+
+    category: "Web Application",
+
+    image: rentopiaPreview,
+
+    description:
+      "A modern web app developed as a class project to help tenants locate rentals easily and help landlords advertise and find clients for their rentals.",
+
+    problem:
+      "Comrades were struggling in House hunting and Landlords were struggling in rental marketing",
+
+    solution:
+      "We developed a web application that allows tenants to search for rentals based on location, price, and amenities, while landlords can list their properties and manage inquiries.",
+    features: [
+      "Announcements",
+      "Events Management",
+      "Mass Schedule",
+      "Daily Readings",
+      "Contact Form",
+      "Admin Dashboard",
+      "Responsive Design",
+    ],
+
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
+
+    status: "Completed",
+
+    github: "#",
+
+    demo: "https://chuckyclay.github.io/Rentopia",
+
+    featured: true,
+
+    year: "2025",
   },
 ];
