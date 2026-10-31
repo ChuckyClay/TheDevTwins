@@ -1,0 +1,249 @@
+import shantelPreview from "@/assets/images/shantel-preview.png";
+import stritaPreview from "@/assets/images/strita-preview.png";
+import portfolioPreview from "@/assets/images/portfolio-preview.png";
+import rentopiaPreview from "@/assets/images/rentopia-preview.png";
+import havenmatrixPreview from "@/assets/images/havenmatrix-preview.png";
+import brewhubPreview from "@/assets/images/brewhub-preview.png";
+
+
+export const projects = [
+  {
+    id: 1,
+
+    title: "Tenant Management System",
+
+    slug: "tenant-management-system",
+
+    category: "Web Application",
+
+    image: shantelPreview,
+
+    description:
+      "A modern property management platform that enables landlords to manage tenants, payments, maintenance requests and communication.",
+
+    problem:
+      "Managing tenants, rent collection, occupancy, and communication manually is time-consuming, prone to errors, and difficult to scale.",
+
+    solution:
+      "We designed a centralized web application that simplifies tenant registration, rent tracking, communication, reporting, and overall property management.",
+
+    features: [
+      "Secure Authentication",
+      "Admin Dashboard",
+      "Tenant Dashboard",
+      "Room Management",
+      "Payment Tracking",
+      "Messaging System",
+      "Reports & Analytics",
+      "Role-Based Access Control",
+    ],
+
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "MySQL",
+    ],
+
+    status: "In Development",
+
+    github: "#",
+
+    demo: "#",
+
+    featured: true,
+
+    year: "2026",
+  },
+
+  {
+    id: 2,
+
+    title: "St. Rita Parish Website",
+
+    slug: "st-rita-parish-website",
+
+    category: "Website",
+
+    image: stritaPreview,
+
+    description:
+      "A modern Catholic parish website featuring announcements, events, Mass schedules, daily readings, contact information, and an administration dashboard.",
+
+    problem:
+      "The parish lacked a modern digital platform for communicating announcements, sharing resources, and engaging parishioners online.",
+
+    solution:
+      "We developed a responsive website with an easy-to-use administration panel, allowing parish staff to manage content while providing visitors with timely information.",
+
+    features: [
+      "Announcements",
+      "Events Management",
+      "Mass Schedule",
+      "Daily Readings",
+      "Contact Form",
+      "Admin Dashboard",
+      "Responsive Design",
+    ],
+
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "SQLite",
+    ],
+
+    status: "Completed",
+
+    github: "#",
+
+    demo: "https://stritaparishnchiru.com",
+
+    featured: true,
+
+    year: "2025",
+  },
+
+  {
+    id: 3,
+
+    title: "The DevTwins Portfolio",
+
+    slug: "the-devtwins-portfolio",
+
+    category: "Portfolio",
+
+    image: portfolioPreview,
+
+    description:
+      "The official company portfolio showcasing our services, technologies, projects, team, and development process.",
+
+    problem:
+      "Potential clients need a professional platform where they can understand our capabilities, explore our work, and easily contact us.",
+
+    solution:
+      "We are building a modern portfolio that demonstrates our expertise while serving as the central online presence for The DevTwins.",
+
+    features: [
+      "Modern UI",
+      "Responsive Design",
+      "Project Showcase",
+      "Services Overview",
+      "Technology Stack",
+      "Contact Form",
+      "SEO Optimization",
+    ],
+
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Vite",
+      "JavaScript",
+    ],
+
+    status: "In Development",
+
+    github: "#",
+
+    demo: "#",
+
+    featured: true,
+
+    year: "2026",
+  },
+
+  {
+    id: 4,
+
+    title: "Rentopia Class Project",
+
+    slug: "Rentopia",
+
+    category: "Web Application",
+
+    image: rentopiaPreview,
+
+    description:
+      "A modern web app developed as a class project to help tenants locate rentals easily and help landlords advertise and find clients for their rentals.",
+
+    problem:
+      "Comrades were struggling in House hunting and Landlords were struggling in rental marketing",
+
+    solution:
+      "We developed a web application that allows tenants to search for rentals based on location, price, and amenities, while landlords can list their properties and manage inquiries.",
+    features: [
+      "Announcements",
+      "Events Management",
+      "Mass Schedule",
+      "Daily Readings",
+      "Contact Form",
+      "Admin Dashboard",
+      "Responsive Design",
+    ],
+
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
+
+    status: "Completed",
+
+    github: "#",
+
+    demo: "https://chuckyclay.github.io/Rentopia",
+
+    featured: true,
+
+    year: "2025",
+  },
+  {
+    id: 5,
+    title: "HavenMatrix",
+    slug: "havenmatrix",
+    category: "Property Management SaaS",
+    image: havenmatrixPreview,
+    description: "A property management and bookkeeping platform built to simplify rental property administration for Kenyan landlords.",
+    problem: "Rental property administration, specifically bookkeeping and tenant management, is complex and time-consuming for landlords.",
+    solution: "A comprehensive SaaS platform that streamlines property administration, automated rent tracking, and tenant management.",
+    features: [
+      "Property Dashboard",
+      "Tenant Management",
+      "Rent Tracking",
+      "Financial Reporting",
+      "Automated Reminders",
+      "Responsive UI",
+    ],
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
+    status: "Live",
+    github: "#",
+    demo: "https://havenmatrix-jet.vercel.app",
+    featured: true,
+    year: "2026",
+  },
+  {
+    id: 6,
+    title: "Brew-Hub",
+    slug: "brew-hub",
+    category: "E-commerce",
+    image: brewhubPreview,
+    description: "An e-commerce platform designed for seamless beverage discovery, ordering, and delivery.",
+    problem: "Customers looking for a convenient way to browse, select, and order their favorite beverages online.",
+    solution: "A modern, responsive e-commerce web application facilitating easy product browsing, cart management, and secure checkout.",
+    features: [
+      "Product Catalog",
+      "Shopping Cart",
+      "Secure Checkout",
+      "Order Management",
+      "Responsive Design",
+    ],
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+    status: "Live",
+    github: "#",
+    demo: "https://brew-hub-sepia.vercel.app",
+    featured: true,
+    year: "2026",
+  },
+];
